@@ -6,6 +6,7 @@
     "name": "min",
     "email": "route666@live.cn"
   },
+  "license": "MIT",
   "dependencies": {
     "@openzeppelin/contracts": "^4.3.2",
     "@truffle/hdwallet-provider": "^1.5.1",
