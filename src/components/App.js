@@ -164,7 +164,7 @@ function App() {
 					<Col className="text-center">
 						<h1 className="text-uppercase">Open Emojis</h1>
 						<p className="countdown">{revealTime !== 0 && <Countdown date={currentTime + (revealTime - currentTime)} />}</p>
-						<p>Welcome! Mint your free emoji (not including gas fees) on 11/04/21</p>
+						<p>Welcome! Mint your free emoji (not including gas fees) on Nov 21, 2021</p>
 					</Col>
 				</Row>
 				<Row className="my-4">

@@ -89,50 +89,14 @@ Create a .env file in the root directory of your project, and fill in the follow
 
 ### 2. Run your migrations
 
-- For Rinkeby testnet: `truffle migrate --reset --network rinkeby`
-- For Polygon Mainnet: `truffle migrate --reset --network matic`
+- For Rinkeby testnet: `yarn deploy:sm:rinkeby`
+- For Polygon Mainnet: `yarn deploy:sm:matic`
 
-## Preparing for Frontend Deployment
+### 3. Deployed smart contract
 
-### 1. Create or Login to your GitHub account
+- Rinkeby: 0xA0478ac71ca62702BaD0C2f15cCB61E546B1eB9F
 
-### 2. Create a new repository
+### 4. Docker deployment
 
-Input the name of your project, and a description if you wish. You may also choose to make the repository public or private
-
-### 3. Commit your code
-
-If you have downloaded this code, you may need to initialize it as a git repository, to do this back in your terminal run:
-`$ git init`
-
-Add files for staging:
-`$ git add .`
-
-This will ready your files for the commit, you may see if they have been added by running:
-`$ git status`
-
-Finally commit your code
-`$ git commit -m "Deployment Setup"`
-
-### 4. Update & Push to Remote URL
-
-If you cloned from a repository, go ahead and update the origin link to the repository you created on GitHub by running:
-`$ git remote set-url origin <YOUR-GITHUB-REPO-LINK>`
-
-Otherwise run this command instead:
-`$ git remote add origin <YOUR-GITHUB-REPO-LINK>`
-
-Finally, push the code to the repoository:
-`$ git push origin master`
-
-### 5. Create or sign in to your Fleek account
-
-Easiest option is to sign in with your GitHub account.
-
-Click on Add new site & Connect with GitHub
-
-Configure and select your repo to deploy
-
-For deploy location, select IPFS hosting
-
-On the build options and deploy tab, under the section Basic Build Settings, for framework select Create React App, then click on Deploy site.
+- Docker build: `yarn docker:build`
+- Docker run: `yarn docker:run`
